@@ -16,7 +16,7 @@ def is_valid_url(url: str, source_url: str) -> bool:
 @pytest.mark.parametrize(
     "source_url",
     [
-        pytest.param("https://api.stac.ceda.ac.1uk", id="CEDA"),
+        pytest.param("https://api.stac.ceda.ac.uk", id="CEDA"),
     ],
 )
 def test_check_catalogue(source_url):
