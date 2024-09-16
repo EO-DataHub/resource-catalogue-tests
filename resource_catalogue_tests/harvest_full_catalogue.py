@@ -5,6 +5,7 @@ from pystac import Collection
 from pystac_client import Client as PystacClient
 from pystac_client.errors import ClientTypeError
 
+
 @click.group()
 def cli():
     pass
@@ -15,6 +16,7 @@ def is_valid_url(url: str, source_url: str) -> bool:
     if url and url.startswith(source_url) and not any(x in url for x in ["?", "thumbnail"]):
         return True
     return False
+
 
 @click.command()
 @click.argument("source_urls_list", nargs=-1)
@@ -62,5 +64,5 @@ def check_catalogue(source_urls_list: list) -> set:
 
 cli.add_command(check_catalogue)
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     cli()
