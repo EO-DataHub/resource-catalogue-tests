@@ -4,3 +4,43 @@
 #
 #    pip-compile
 #
+attrs==24.2.0
+    # via
+    #   jsonschema
+    #   referencing
+certifi==2024.8.30
+    # via requests
+charset-normalizer==3.3.2
+    # via requests
+click==8.1.7
+    # via resource-catalogue-tests (pyproject.toml)
+idna==3.10
+    # via requests
+jsonschema==4.23.0
+    # via pystac
+jsonschema-specifications==2023.12.1
+    # via jsonschema
+pystac[validation]==1.10.1
+    # via
+    #   pystac-client
+    #   resource-catalogue-tests (pyproject.toml)
+pystac-client==0.8.3
+    # via resource-catalogue-tests (pyproject.toml)
+python-dateutil==2.9.0.post0
+    # via
+    #   pystac
+    #   pystac-client
+referencing==0.35.1
+    # via
+    #   jsonschema
+    #   jsonschema-specifications
+requests==2.32.3
+    # via pystac-client
+rpds-py==0.20.0
+    # via
+    #   jsonschema
+    #   referencing
+six==1.16.0
+    # via python-dateutil
+urllib3==2.2.3
+    # via requests
