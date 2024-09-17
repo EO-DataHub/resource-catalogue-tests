@@ -66,7 +66,8 @@ classifiers = [
 dependencies = [
     "click",
     "pystac-client",
-    "pystac"
+    "pystac",
+    "pytest",
 ]
 
 # List additional groups of dependencies here (e.g. development

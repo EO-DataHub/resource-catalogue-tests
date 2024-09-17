@@ -8,13 +8,13 @@ RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
     --mount=type=cache,target=/var/lib/apt,sharing=locked \
     apt-get update -y && apt-get upgrade -y
 
-WORKDIR /resource-catalogue-tests
+WORKDIR /tests
 ADD LICENSE requirements.txt ./
-ADD resource_catalogue_tests ./resource_catalogue_tests/
+ADD tests ./tests/
 ADD pyproject.toml ./
 RUN --mount=type=cache,target=/root/.cache/pip pip3 install -r requirements.txt .
 
 # Change as required, eg
 #  CMD ["gunicorn", "-w", "2", "-b", "0.0.0.0", "-k", "uvicorn.workers.UvicornWorker", "--log-level", "debug", "mymodule.main:app"]
-CMD python -m resource_catalogue_tests
+CMD python -m pytest .
 
