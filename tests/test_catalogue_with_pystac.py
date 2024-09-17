@@ -1,4 +1,5 @@
 import logging
+import os
 from pprint import pprint
 
 import pytest
@@ -10,7 +11,8 @@ from pystac_client.exceptions import APIError
 def client():
     logging.basicConfig()
     logging.getLogger().setLevel(logging.DEBUG)
-    return Client.open("https://dev.eodatahub.org.uk/api/catalogue/stac")
+    catalogue_url = os.getenv("CATALOGUE_URL", "https://dev.eodatahub.org.uk/api/catalogue/stac")
+    return Client.open(catalogue_url)
 
 
 @pytest.mark.parametrize(
