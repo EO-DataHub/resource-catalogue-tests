@@ -160,6 +160,8 @@ cython_debug/
 #.idea/
 #
 
+# Visual Studio Code
+.vscode/
 
 *.bak
 .pre-commit-config.yaml
