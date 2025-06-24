@@ -4,48 +4,48 @@
 #
 #    pip-compile --extra=dev --output-file=requirements-dev.txt
 #
-attrs==24.2.0
+attrs==25.3.0
     # via
     #   jsonschema
     #   referencing
-black==24.8.0
+black==25.1.0
     # via resource-catalogue-tests (pyproject.toml)
-build==1.2.2
+build==1.2.2.post1
     # via pip-tools
-certifi==2024.8.30
+certifi==2025.6.15
     # via requests
 cfgv==3.4.0
     # via pre-commit
-charset-normalizer==3.3.2
+charset-normalizer==3.4.2
     # via requests
-click==8.1.7
+click==8.2.1
     # via
     #   black
     #   pip-tools
     #   resource-catalogue-tests (pyproject.toml)
-distlib==0.3.8
+distlib==0.3.9
     # via virtualenv
 execnet==2.1.1
     # via pytest-xdist
-filelock==3.16.0
+filelock==3.18.0
     # via virtualenv
-identify==2.6.1
+identify==2.6.12
     # via pre-commit
 idna==3.10
     # via requests
-iniconfig==2.0.0
+iniconfig==2.1.0
     # via pytest
-isort==5.13.2
+isort==6.0.1
     # via resource-catalogue-tests (pyproject.toml)
-jsonschema==4.23.0
+jsonschema==4.24.0
     # via pystac
-jsonschema-specifications==2023.12.1
+jsonschema-specifications==2025.4.1
     # via jsonschema
-mypy-extensions==1.0.0
+mypy-extensions==1.1.0
     # via black
 nodeenv==1.9.1
     # via pre-commit
-packaging==24.1
+packaging==25.0
     # via
     #   black
     #   build
@@ -54,34 +54,36 @@ pathspec==0.12.1
     # via black
 pip-tools==7.4.1
     # via resource-catalogue-tests (pyproject.toml)
-platformdirs==4.3.3
+platformdirs==4.3.8
     # via
     #   black
     #   virtualenv
-pluggy==1.5.0
+pluggy==1.6.0
     # via pytest
-pre-commit==3.8.0
+pre-commit==4.2.0
     # via resource-catalogue-tests (pyproject.toml)
-pyproject-hooks==1.1.0
+pygments==2.19.2
+    # via pytest
+pyproject-hooks==1.2.0
     # via
     #   build
     #   pip-tools
-pystac[validation]==1.10.1
+pystac[validation]==1.13.0
     # via
     #   pystac-client
     #   resource-catalogue-tests (pyproject.toml)
-pystac-client==0.8.3
+pystac-client==0.8.6
     # via resource-catalogue-tests (pyproject.toml)
-pytest==8.3.3
+pytest==8.4.1
     # via
     #   pytest-mock
     #   pytest-xdist
     #   resource-catalogue-tests (pyproject.toml)
-pytest-mock==3.14.0
+pytest-mock==3.14.1
     # via resource-catalogue-tests (pyproject.toml)
 pytest-watcher==0.4.3
     # via resource-catalogue-tests (pyproject.toml)
-pytest-xdist==3.6.1
+pytest-xdist==3.7.0
     # via resource-catalogue-tests (pyproject.toml)
 python-dateutil==2.9.0.post0
     # via
@@ -89,27 +91,29 @@ python-dateutil==2.9.0.post0
     #   pystac-client
 pyyaml==6.0.2
     # via pre-commit
-referencing==0.35.1
+referencing==0.36.2
     # via
     #   jsonschema
     #   jsonschema-specifications
-requests==2.32.3
+requests==2.32.4
     # via pystac-client
-rpds-py==0.20.0
+rpds-py==0.25.1
     # via
     #   jsonschema
     #   referencing
-ruff==0.6.5
+ruff==0.12.0
     # via resource-catalogue-tests (pyproject.toml)
-six==1.16.0
+six==1.17.0
     # via python-dateutil
-urllib3==2.2.3
+typing-extensions==4.14.0
+    # via referencing
+urllib3==2.5.0
     # via requests
-virtualenv==20.26.6
+virtualenv==20.31.2
     # via pre-commit
-watchdog==5.0.2
+watchdog==6.0.0
     # via pytest-watcher
-wheel==0.44.0
+wheel==0.45.1
     # via pip-tools
 
 # The following packages are considered to be unsafe in a requirements file:
