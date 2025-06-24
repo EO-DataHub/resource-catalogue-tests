@@ -1,3 +1,5 @@
+# Archived Repository - no longer used and no longer maintained
+
 # UK EO Data Hub Platform: resource catalogue tests
 
 A repository for system tests for the resource catalogue namespace
